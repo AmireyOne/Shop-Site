@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/shop.css">
+    <title>shopPaeg</title>
+</head>
+<body dir="rtl">
+
+    <div data-include="./header.html"></div>
+    <header class="page-address d-flex justify-content-between pe-5 ps-5">
+        <h5 class="mt-2 mb-2 fw-bold">فروشگاه</h5>
+        <div class="address align-self-center">
+            <a href="../index.html" class="align-self-center"> <i class="fa fa-home"></i> خانه  </a>
+            >
+            <a href="./shop.html" class="align-self-center">فروشگاه</a>
+        </div>
+    </header>
+    
+    <div class="row pe-3 ps-3 mt-5">
+        <div class="col-xl-3 filter-box" >
+            <div class="ps-3 pe-3 pt-2">
+                
+                <div class="category-box borders p-3 rounded-3">
+
+                    <h4 class="fw-bold"> دسته بندی محصول </h4>
+                    <hr class="">
+
+                    <ul>
+                        <li> <a href="#"> موبایل و لوازم جانبی (12) </a> </li>
+                        <li> <a href="#"> لپتاپ (12) </a> </li>
+                        <li> <a href="#"> الکترونیک (12) </a> </li>
+                        <li> <a href="#"> ساعت هوشمند (12) </a> </li>
+                        <li> <a href="#"> هارد (12) </a> </li>
+                        <li> <a href="#"> دستگاه های قابل حمل (12) </a> </li>
+                        <li> <a href="#"> دوربین اکشن (12) </a> </li>
+                        <li> <a href="#"> ابزار هوشمند (12) </a> </li>
+                        <li> <a href="#"> مانیتور (12) </a> </li>
+                        <li> <a href="#"> تلویزیون هوشمند (12) </a> </li>
+                        <li> <a href="#"> دوربین (12) </a> </li>
+                        <li> <a href="#"> پایه مانیتور (12) </a> </li>
+                        <li> <a href="#"> هدفون (12) </a> </li>
+                    </ul>
+                </div>
+
+                <div class="price-filter borders p-3 rounded-3 mt-3">
+                    <h4>فیلتر بر اساس قیمت</h4>
+                    <hr class="">
+                    <input type="range" class="form-range mt-2" id="customRange">
+                    <div class="d-flex">
+                        
+                        
+                        <button class="filter-btn ms-3">فیلتر</button>
+                        <p class="align-self-center">قیمت:</p>
+                    </div>
+                </div>
+                  
+                <div class="rate-filter borders p-3 rounded-3 mt-3">
+                    <h4>فیلتر بر اساس رتبه بندی</h4>
+                    <hr class="">
+
+                    <div class="star-rate w-100">
+                        <div class="d-flex star-rate-box">
+                            <input type="radio" name="rate">
+                            <div class="rate-box ms-2 mt-1">
+                                <div class="rated1 rated">
+
+                                </div>
+                            </div>
+                            <div class="user-rate-box d-flex ps-2">
+                                <i class="fa fa-star text-warning me-2"></i>
+                                <i class="fa fa-star text-warning me-2"></i>
+                                <i class="fa fa-star text-warning me-2"></i>
+                                <i class="fa fa-star text-warning me-2"></i>
+                                <i class="fa fa-star text-warning me-2"></i>
+                            </div>
+                            <p class="rate-count">124</p>
+                        </div>
+                        <div class="d-flex star-rate-box">
+                            <input type="radio" name="rate">
+                            <div class="rate-box ms-2 mt-1">
+                                <div class="rated2 rated">
+
+                                </div>
+                            </div>
+                            <div class="user-rate-box d-flex ps-2">
+                                <i class="fa fa-star text-warning me-2"></i>
+                                <i class="fa fa-star text-warning me-2"></i>
+                                <i class="fa fa-star text-warning me-2"></i>
+                                <i class="fa fa-star text-warning me-2"></i>
+                                <i class="fa-regular fa-star text-warning me-2"></i>
+                            </div>
+                            <p class="rate-count">52</p>
+                        </div>
+                        <div class="d-flex star-rate-box">
+                            <input type="radio" name="rate">
+                            <div class="rate-box ms-2 mt-1">
+                                <div class="rated3 rated">
+
+                                </div>
+                            </div>
+                            <div class="user-rate-box d-flex ps-2">
+                                <i class="fa fa-star text-warning me-2"></i>
+                                <i class="fa fa-star text-warning me-2"></i>
+                                <i class="fa fa-star text-warning me-2"></i>
+                                <i class="fa-regular fa-star text-warning me-2"></i>
+                                <i class="fa-regular fa-star text-warning me-2"></i>
+                            </div>
+                            <p class="rate-count">12</p>
+                        </div>
+                        <div class="d-flex star-rate-box">
+                            <input type="radio" name="rate">
+                            <div class="rate-box ms-2 mt-1">
+                                <div class="rated4 rated">
+
+                                </div>
+                            </div>
+                            <div class="user-rate-box d-flex ps-2">
+                                <i class="fa fa-star text-warning me-2"></i>
+                                <i class="fa fa-star text-warning me-2"></i>
+                                <i class="fa-regular fa-star text-warning me-2"></i>
+                                <i class="fa-regular fa-star text-warning me-2"></i>
+                                <i class="fa-regular fa-star text-warning me-2"></i>
+                            </div>
+                            <p class="rate-count">5</p>
+                        </div>
+                        <div class="d-flex star-rate-box">
+                            <input type="radio" name="rate">
+                            <div class="rate-box ms-2 mt-1">
+                                <div class="rated5 rated">
+
+                                </div>
+                            </div>
+                            <div class="user-rate-box d-flex ps-2">
+                                <i class="fa fa-star text-warning me-2"></i>
+                                <i class="fa-regular fa-star text-warning me-2"></i>
+                                <i class="fa-regular fa-star text-warning me-2"></i>
+                                <i class="fa-regular fa-star text-warning me-2"></i>
+                                <i class="fa-regular fa-star text-warning me-2"></i>
+                            </div>
+                            <p class="rate-count">2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="color-filter borders p-3 rounded-3 mt-3">
+                    <h4>فیلتر بر اساس رنگ</h4>
+                    <hr class="">
+
+                    <div class="color-radio">
+                        <ul>
+                            <li class="d-flex">
+                                <input type="radio" name="color" id="">
+                                <p> سیاه (12) </p>
+                            </li>
+                            <li class="d-flex">
+                                <input type="radio" name="color" id="">
+                                <p> آبی (12) </p>
+                            </li>
+                            <li class="d-flex">
+                                <input type="radio" name="color" id="">
+                                <p> خاکستری (12) </p>
+                            </li>
+                            <li class="d-flex">
+                                <input type="radio" name="color" id="">
+                                <p> سبز (12) </p>
+                            </li>
+                            <li class="d-flex">
+                                <input type="radio" name="color" id="">
+                                <p> قرمز (12) </p>
+                            </li>
+                            <li class="d-flex">
+                                <input type="radio" name="color" id="">
+                                <p> سفید (12) </p>
+                            </li>
+                            <li class="d-flex">
+                                <input type="radio" name="color" id="">
+                                <p> بنفش (12) </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="brand-filter borders p-3 rounded-3 mt-3">
+                    <h4>فیلتر بر اساس برند</h4>
+                    <hr class="">
+
+                    <div class="color-radio">
+                        <ul>
+                            <li class="d-flex">
+                                <input type="radio" name="brand" id="">
+                                <p> اپل </p>
+                            </li>
+                            <li class="d-flex">
+                                <input type="radio" name="brand" id="">
+                                <p> سامسونگ</p>
+                            </li>
+                            <li class="d-flex">
+                                <input type="radio" name="brand" id="">
+                                <p> لنوو </p>
+                            </li>
+                            <li class="d-flex">
+                                <input type="radio" name="brand" id="">
+                                <p> ماکروسافت </p>
+                            </li>
+                            <li class="d-flex">
+                                <input type="radio" name="brand" id="">
+                                <p> ردمی </p>
+                            </li>
+                            <li class="d-flex">
+                                <input type="radio" name="brand" id="">
+                                <p> دل </p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="filter-ad-box mt-3">
+                    <img src="../img/ad/advertise-img1.png" alt="ad" class="w-100">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-9 product-box">
+            <div class="row products">
+                
+               
+            </div>
+        </div>
+    </div>
+
+    <ul class="pagination justify-content-center mt-5 mb-5">
+        <li class="page-item"><a class="page-link" href="#">بعدی</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">قبلی</a></li>
+    </ul>
+
+
+
+    <div class="container mt-4" >
+        <div class="row text-center">
+
+        <div class="col-6 col-md-3">
+            <div class="info-box">
+            <i class="fas fa-headset"></i>
+            <h6 class="mt-2 fw-bold">پشتیبانی ۲۴/۷</h6>
+            <p class="mb-0">پشتیبانی ۷ روزه و ۲۴ ساعته</p>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <div class="info-box">
+            <i class="fas fa-credit-card"></i>
+            <h6 class="mt-2 fw-bold">پرداخت امن</h6>
+            <p class="mb-0">پرداخت از طریق درگاه‌های امن</p>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <div class="info-box">
+            <i class="fas fa-thumbs-up"></i>
+            <h6 class="mt-2 fw-bold">رضایت ۱۰۰ درصدی</h6>
+            <p class="mb-0">ارائه باکیفیت‌ترین محصولات</p>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <div class="info-box">
+            <i class="fas fa-truck"></i>
+            <h6 class="mt-2 fw-bold">ارسال رایگان</h6>
+            <p class="mb-0">ارسال رایگان به سراسر ایران</p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div data-include="./footer.html"></div>   
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/include.js"></script>
+    <script src="../js/shop.js"></script>
+</body>
+</html>

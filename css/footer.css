@@ -1,0 +1,32 @@
+.main-footer {
+  background-color: #f8f9fa;
+  font-size: 14px;
+  color: #333;
+}
+
+.main-footer a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.main-footer a:hover {
+  color: #0d6efd;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-logo {
+  max-width: 120px;
+}
+
+.payment-logos img {
+  height: 24px;
+  object-fit: contain;
+}
+.img-qr-footer{
+  width: 80px;
+  height: 80px;
+}

@@ -1,0 +1,672 @@
+@font-face {
+  font-family: 'Vazir';
+  src: url('../FONTS/Vazir.woff2') format('woff2'),
+       url('../FONTS/Vazir.woff') format('woff'),
+       url('../FONTS/Vazir.ttf') format('truetype');
+}
+
+.black-color-300{
+  color: rgba(0, 0, 0, 0.397);
+
+}
+.font-small{
+  font-size: 10px;
+}
+.banner{
+    background: url('../img/banner-bg.png');
+    background-size: cover; /* یا contain */
+    height: 500px; /* یا هر ارتفاع مشخص */
+    flex-direction: column;
+    font-family: 'vazir';
+    position: relative;
+    
+}
+.banner-content p{
+    color: brown;
+    font-weight: bold;
+    font-family: 'vazir';
+}
+.banner-content h2 {
+    font-weight: bold;
+    font-family: 'vazir';
+    font-size: 50px
+}
+
+.banner-content .banner-btn{
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(12, 155, 226);
+}
+.scroll-btn {
+  width: 60px;
+  height: 60px;
+  background-color: #1e758c; /* رنگ آبی */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  position: relative;
+  margin: -30px auto 30px auto; /* بالا کمی overlap می‌کنه */
+  z-index: 10;
+  cursor: pointer;
+}
+.scroll-btn {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.scroll-btn {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-category-img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+}
+.main-category-item{
+    width: 150px;
+    height: fit-content;
+    cursor: pointer;
+   
+}
+.main-category-img-box{
+    
+    background-color: rgba(165, 42, 42, 0.677);
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.main-category-title{
+    font-family: 'vazir';
+}
+.main-category-count{
+    color: rgba(0, 0, 0, 0.437);
+    font-family: 'vazir';
+}
+.main-category-item:hover .main-category-img{
+    
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+ 
+}
+.category-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-categoryes {
+  overflow-x: scroll; 
+  /* scrollbar-width: none; 
+  -ms-overflow-style: none;  */
+  scroll-behavior: smooth;
+  flex-wrap: nowrap; 
+}
+.main-categoryes::-webkit-scrollbar {
+  display: none;
+}
+.main-categoryes {
+  user-select: none; 
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+}
+.main-category-item {
+  flex: 0 0 auto; 
+  width: 180px; 
+  transition: transform 0.5s ease;
+  
+  transform: translateX(0);
+}
+
+.main-category-item.moving {
+  transform: translateX(-133px);
+  -webkit-transform: translateX(-133px);
+  -moz-transform: translateX(-133px);
+  -ms-transform: translateX(-133px);
+  -o-transform: translateX(-133px);
+}
+
+.main-category-item.entering {
+  transform: translateX(136px);
+  opacity: 0;
+  animation: slideIn 0.5s forwards ease;
+  -webkit-animation: slideIn 0.5s forwards ease;
+  -webkit-transform: translateX(136px);
+  -moz-transform: translateX(136px);
+  -ms-transform: translateX(136px);
+  -o-transform: translateX(136px);
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.dd{
+  position: relative;
+  height: 230px;
+  max-width: 400px;
+  background-size: cover;
+  margin: 12px auto;
+}
+.dd1{
+  background: url('../img/product-banner/promotional-banner-img1.png'); 
+  background-size: cover;
+}
+.dd2{
+  background: url('../img/product-banner/promotional-banner-img2.png'); 
+  background-size: cover;
+}
+.dd3{
+  background: url('../img/product-banner/promotional-banner-img3.png'); 
+  background-size: cover;
+}
+.dd4{
+  background: url('../img/product-banner/promotional-banner-img4.png'); 
+  background-size: cover;
+}
+
+.product-banner-content{
+  max-width: 100%;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  font-family: 'vazir';
+  z-index: 100 !important;
+  padding-right: 30px;
+}
+.prodct-banner-btn{
+  margin-top: 10px;
+  border: none;
+  background-color: rgb(12, 155, 226);
+  width: fit-content;
+  padding:2px  10px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.all-sales{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.367);
+}
+
+.card-slider-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 16px 0;
+  direction: ltr; /* اگه سایتت فارسیه، برای چپ به راست بودن اسکرول */
+  scroll-behavior: smooth;
+}
+
+.card-slider {
+  display: inline-flex;
+  gap: 16px; /* فاصله بین کارت‌ها */
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  background: transparent;
+  border: 1px solid #00000036;
+  border-radius: 8px;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.card-img-custom{
+  padding: 30px;
+  transition: all ease 0.4s;
+  -webkit-transition: all ease 0.4s;
+  -moz-transition: all ease 0.4s;
+  -ms-transition: all ease 0.4s;
+  -o-transition: all ease 0.4s;
+}
+.card-title{
+  font-family: 'vazir';
+  font-weight: bolder;
+  font-size: 15px;
+}
+.card-price{
+  font-size: 13px; 
+}
+.card-price .del-price{
+  color: rgba(0, 0, 0, 0.46);
+}
+.card-rate{
+  color: rgba(0, 0, 0, 0.46);
+  font-size: smaller;
+}
+.card-sold-box{
+  width: 100%;
+  height: 7px;
+  border-radius: 50px;
+  border: 1px solid black; 
+}
+.sold{
+  background-color: rgb(0, 0, 87);
+  width: 60%;
+  height: 100%;
+}
+.sold-text{
+  font-size: 13px;
+}
+.card-add-cart-btn{
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #e0f5ff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 13px;
+  border: none;
+  color: #1e758c;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+.card-add-cart-btn:hover{
+  background-color: rgb(156, 156, 229);
+}
+.card:hover .card-img-custom{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.product-baner-buying-wrapper{
+  height: 250px;
+}
+
+.product-baner-buying1{
+  background: url('../img/banner/flash-sale-bg1.png');  
+  background-size: cover;
+  background-position: left;
+
+}
+.product-baner-buying2{
+  background: url('../img/banner/flash-sale-bg2.png');  
+  background-size: cover;
+  background-position: center;
+}
+.product-baner-buying {
+  
+  background-size: cover;
+  
+  height: 250px;
+  border-radius: 12px;
+}
+
+.prodct-banner-btn-buying{
+  width: 100px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(193, 193, 255);
+  cursor: pointer;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+.prodct-banner-btn-buying:hover{
+  background-color: rgb(153, 153, 255);
+}
+.banner-time{
+  padding:5px 10px;
+  font-size: 13px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.252);
+}
+.custom-product-menu-item{
+  color: rgba(0, 0, 0, 0.476);
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+
+}
+.custom-product-menu-item:hover{
+
+  box-shadow: 0 0 0 1px rgb(45, 45, 45); /* شبیه border */
+}
+.custom-product-card{
+    max-width: 200px;
+    height: 330px;
+    margin: 5px;
+    position: relative;
+    background: transparent;
+    border: 1px solid #00000036;
+    border-radius: 8px;   
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.custom-card-add-cart-btn{
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #cde9f6;
+  font-size: 13px;
+  border: none;
+  color: #1e758c;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  margin:10px auto;
+
+}
+.custom-card-add-cart-btn:hover{
+  background-color: rgb(113, 113, 249);
+}
+
+
+.product-baner-buying3{
+  background: url('../img/banner/offer-bg-img2.png');  
+  background-size: cover;
+  background-position: left;
+
+}
+.product-baner-buying4{
+  background: url('../img/banner/offer-bg-img1.png');  
+  background-size: cover;
+  background-position: center;
+}
+.product-baner-buying {
+  
+  background-size: cover;
+  
+  height: 250px;
+  border-radius: 12px;
+}
+
+.prodct-banner-btn-buying{
+  width: 100px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(193, 193, 255);
+  cursor: pointer;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+.prodct-banner-btn-buying:hover{
+  background-color: rgb(153, 153, 255);
+}
+.img-box-logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: white;
+  
+}
+.offer-logo{
+  width: 100%;
+}
+
+.dealing-banner{
+  background-color: #1c799b;
+  position: relative;
+  height: 430px;
+  border-radius: 20px;
+  
+  
+}
+.dealing-banner img{
+  border-radius: 20px;
+}
+.dealing-banner::before{
+  
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #1c799bef; /* یا مثلاً red با شفافیت */
+  z-index: 2;
+  border-radius: 8px;
+}
+.dealing-shape-bascet{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 5;
+}
+.dealing-banner-content{
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  z-index: 10;
+}
+.dealing-btn{
+  padding: 7px 15px;
+  border-radius: 20px;
+  border: none;
+  transition: all ease 0.3s;
+
+}
+.dealing-btn:hover{
+  background-color: #13536a;
+  
+}
+.dealing-card-slider-wrapper {
+  
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 16px 0;
+  direction: ltr; /* اگه سایتت فارسیه، برای چپ به راست بودن اسکرول */
+  scroll-behavior: smooth;
+}
+
+.discount-code-wrapper{
+  border: 3px dashed rgb(0, 0, 109);
+  padding: 15px 10px;
+  background-color: rgb(184, 184, 239);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.discount-code-btn{
+  padding: 7px 15px;
+  background-color: rgb(150, 150, 243);
+  border-radius: 25px;
+  color: white;
+  transition: all ease 0.3s;
+  border: none;
+}
+.discount-code-btn:hover{
+  background-color: rgb(97, 97, 242);
+}
+
+.special-product-title{
+  background-color: #ddf7ff;
+  width: 100%;
+  padding: 10px 7px; 
+  border-radius: 15px;
+  
+}
+.special-product-title h3{
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.312);
+  font-size: 20px;
+  font-weight: bold;
+}
+.special-product{
+  border: 1px solid rgba(0, 0, 0, 0.215);
+  border-radius: 15px;
+  padding: 10px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.special-product-img-box{
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.272);
+  border-radius: 5px;
+  margin-left: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.special-product-img-box img{
+  width: 100%;
+}
+.special-product-content p{
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.393);
+}
+
+.timer-week-deal{
+
+  font-size: 7px;
+}
+.brand-img-box {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 16px 0;
+    direction: ltr; /* اگه سایتت فارسیه، برای چپ به راست بودن اسکرول */
+    scroll-behavior: smooth;
+}
+.brand-img-box img {
+  width: 120px;
+  margin: 10px;
+}
+.email-box-wrapper{
+  background-color: wheat;
+  padding: 40px 15px;
+  height: fit-content;
+}
+.email-img{
+  width: 90%;
+}
+.email-img-box{
+  text-align: left;
+}
+.email-input{
+  width: 70%;
+  height: 45px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  padding-right: 10px ;
+}
+.email-btn{
+  padding: 5px 10px;
+  background-color: rgb(66, 243, 66);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all ease 0.3s;
+
+}
+.email-btn:hover{
+  background-color: rgb(19, 239, 19);
+}
+
+@media (max-width : 790px) {
+  .banner {
+    margin-top: 130px;
+  }
+  .banner-wrapper{
+    
+    flex-direction: column !important;
+  }
+  .banner-img-box{
+    margin-top: 30px;
+  }
+  .category-wrapper {
+    margin-top: 130px;
+  }
+  .scroll-btn{
+    bottom: -160px;
+  }
+  .sales-wrapper{
+    flex-direction: column;
+  }
+  .custom-product-menu ul {
+    flex-wrap: wrap;
+  }
+  
+}
+@media (max-width : 444px) {
+  .banner-img-box img{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+  .custom-product-card{
+    margin: 10px auto;
+    
+  }
+}

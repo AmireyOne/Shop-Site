@@ -1,0 +1,43 @@
+.light-black{
+    color: rgba(0, 0, 0, 0.494);
+}
+
+.page-address{
+    background-color: rgb(168, 168, 244);
+}
+.address a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+.address a:hover{
+    
+    color: rgba(0, 0, 0, 0.498);
+}
+.sign-box , .sign-up-box{
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.sign-btn{
+    padding: 5px 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border: none;
+    background-color: blueviolet;
+}
+.links{
+    font-size: 14px;
+}
+.sign-up-box{
+    display: none;
+}

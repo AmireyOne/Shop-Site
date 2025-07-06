@@ -1,0 +1,280 @@
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<link rel="stylesheet" href="../css/header.css" />
+
+<header dir="rtl">
+  <div class="header d-flex justify-content-between p-1">
+    <div class="seller-timer align-self-center">
+      <p class="text-light header-text timer-header">
+        تا پایان حراج : 86روز 6ساعت 23دقیقه 6ثانیه
+      </p>
+    </div>
+
+    <div
+      class="order-tracking-box d-flex justify-content-between align-self-center"
+    >
+      <p class="header-text align-self-center">
+        یکی بخرید یکی رایگان <span class="text-warning"> اولین سفارش</span>
+      </p>
+      <div class="order-tracking pe-1 me-1">
+        <img src="../img/track-icon.png" />
+        <a href="#" class="text-light header-text">پیگیری سفارش</a>
+      </div>
+    </div>
+
+    <div class="language-seting-box header-text">
+      <ul class="header-item-list d-flex justify-content-between">
+        <li class="list-item align-self-center" id="about-us">درباره ما</li>
+        <li class="list-item">
+          <select name="language" id="language" class="select-items me-3">
+            <option value="persian" class="option-item text-center">
+              فارسی
+            </option>
+            <option value="english" class="option-item text-center">
+              english
+            </option>
+            <option value="franch" class="option-item text-center">
+              franch
+            </option>
+            <option value="espanish" class="option-item text-center">
+              espanish
+            </option>
+          </select>
+        </li>
+
+        <li class="list-item">
+          <select name="currency" id="currency" class="select-items me-2">
+            <option value="persian" class="option-item text-center">
+              تومن
+            </option>
+            <option value="doller" class="option-item text-center">
+              dollar
+            </option>
+            <option value="euro" class="option-item text-center">euro</option>
+            <option value="pound" class="option-item text-center">pound</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<header dir="rtl">
+  <div class="middle-header d-flex justify-content-between mt-4">
+    <div class="logo-box me-3">
+      <img src="../img/logo.png" alt="logo" class="logo-img" />
+    </div>
+
+    <div class="search-box d-flex justify-content-between p-1">
+      <div class="dropdown">
+        <button class="dropdown-btn">
+          همه دسته‌بندی ها <i class="fa fa-chevron-down icon-category"></i>
+        </button>
+        <div class="dropdown-content">
+          <input
+            type="text"
+            class="search-category"
+            placeholder="دسته بندی را وارد کنید"
+          />
+          <a href="#" class="">همه دسته بندی ها</a>
+          <a href="#">خواربار</a>
+          <a href="#">صبحانه و لبنیات</a>
+          <a href="#">سبزیجات</a>
+          <a href="#">شیر و لبنیات</a>
+          <a href="#">غذا و اسباب بازی حیوانات</a>
+          <a href="#">خانگی...</a>
+        </div>
+      </div>
+      <input
+        type="text"
+        placeholder="محصول یا برند را جست و جو کنید"
+        class="search pe-2"
+      />
+      <button class="search-btn">
+        <i class="fa fa-search text-light"></i>
+      </button>
+    </div>
+
+    <div class="midlle-header-items align-self-center">
+      <ul class="d-flex justify-content-around align-self-center">
+        <li class="midlle-header-item">
+          <i class="fa-regular fa-user fa-lg go-sign-page"></i>
+        </li>
+        <li class="midlle-header-item faverit">
+          <i class="fa-regular fa-heart fa-lg"></i>
+        </li>
+        <li class="midlle-header-item cart-icon">
+          <i class="fa fa-cart-shopping fa-lg go-shoppingCart"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<hr class="mb-0" />
+
+<header dir="rtl">
+  <div class="last-header d-flex justify-content-between">
+    <div class="d-flex justify-content-between">
+      <div class="dropdown">
+        <button class="dropdown-btn me-4">
+          دسته‌بندی ها <i class="fa fa-th"></i>
+        </button>
+        <div class="dropdown-content-category">
+          
+        </div>
+      </div>
+
+      <ul class="menu d-flex justify-content-between align-self-center me-4">
+        <li class="menu-item">
+          <div class="dropdown">
+            <button class="dropdown-btn me-4">
+              دمو ها <i class="fa fa-display"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../index.html">دموی خواربار</a>
+              <a href="#">دموی الکترونیک</a>
+              <a href="#">دموی مد</a>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="dropdown">
+            <button class="dropdown-btn me-4">
+              فروشگاه <i class="fa fa-store"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../html/shop.html">فروشگاه</a>
+              <a href="#">جزییات محصول</a>
+              <a href="#">دموی دوم جزییات محصول</a>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="dropdown">
+            <button class="dropdown-btn me-4">
+              صفحات <i class="fa fa-file-lines"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../html/shoppingCart.html"> سبد خرید </a>
+              <a href="#"> لیست علاقه منی ها </a>
+              <a href="#">صفحه پرداخت </a>
+              <a href="#">فروشنده شوید</a>
+              <a href="#"> حساب کاربری</a>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="dropdown">
+            <button class="dropdown-btn me-4">
+              فروشندگان <i class="fa fa-user-tie"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../html/signInPage.html"> فروشندگان</a>
+              <a href="#"> جزییات فروشندگان</a>
+              <a href="#"> دموی دوم فروشندگان</a>
+              <a href="#"> دموی دوم جزییات فروشنده</a>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="dropdown">
+            <button class="dropdown-btn me-4">
+              وبلاگ <i class="fa fa-blog"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#"> وبلاگ</a>
+              <a href="#"> جزییات وبلاگ </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contact ms-3 d-flex p-2">
+      <a href="#" class="contact-us align-self-center" id="contact-us"
+        >تماس با ما <i class="fa fa-phone"></i
+      ></a>
+      <a
+        href="#"
+        class="contact-us align-self-center menu-btn"
+        
+        id="menu-btn"
+        ><i class="fas fa-bars"></i
+      ></a>
+    </div>
+
+    <!-- منوی موبایل -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="mobile-menu-list mt-5">
+        <li class="mobile-menu-item">
+          <button class="submenu-toggle">
+            دموها <i class="fa fa-display"></i>
+          </button>
+          <ul class="submenu">
+            <li><a href="../index.html">دموی خواربار</a></li>
+            <li><a href="#">دموی الکترونیک</a></li>
+            <li><a href="#">دموی مد</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu-item">
+          <button class="submenu-toggle">
+            فروشگاه <i class="fa fa-store"></i>
+          </button>
+          <ul class="submenu">
+            <li><a href="../html/shop.html">فروشگاه</a></li>
+            <li><a href="#">جزییات محصول</a></li>
+            <li><a href="#">دموی دوم جزییات محصول</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu-item">
+          <button class="submenu-toggle">
+            صفحات <i class="fa fa-file-lines"></i>
+          </button>
+          <ul class="submenu">
+            <li><a href="../html/shoppingCart.html">سبد خرید</a></li>
+            <li><a href="#">لیست علاقه‌مندی‌ها</a></li>
+            <li><a href="#">صفحه پرداخت</a></li>
+            <li><a href="#">فروشنده شوید</a></li>
+            <li><a href="../html/signInPage.html">حساب کاربری</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu-item">
+          <button class="submenu-toggle">
+            فروشندگان <i class="fa fa-user-tie"></i>
+          </button>
+          <ul class="submenu">
+            <li><a href="#">فروشندگان</a></li>
+            <li><a href="#">جزئیات فروشندگان</a></li>
+            <li><a href="#">دموی دوم فروشندگان</a></li>
+            <li><a href="#">دموی دوم جزییات فروشنده</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu-item">
+          <button class="submenu-toggle">
+            وبلاگ <i class="fa fa-blog"></i>
+          </button>
+          <ul class="submenu">
+            <li><a href="#">وبلاگ</a></li>
+            <li><a href="#">جزئیات وبلاگ</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- اورلی -->
+    <div class="overlay" id="overlay"></div>
+  </div>
+</header>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/header.js"></script>

@@ -1,0 +1,143 @@
+.borders{
+    border: 1px solid rgba(0, 0, 0, 0.535);
+}
+.light-black{
+    color: rgba(0, 0, 0, 0.494);
+}
+.filter-box h4{
+    margin: 24px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.category-box {
+    height: 400px;
+  
+}
+.category-box ul{
+    height: 280px;
+    overflow-y: scroll;
+  
+}
+.category-box li{
+  margin-top: 20px;
+
+  
+}
+.category-box a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+.category-box a:hover{
+    
+    color: rgba(0, 0, 0, 0.536);
+}
+.filter-btn{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(203, 203, 255);
+}
+.color-filter input , .brand-filter input{
+    margin-left: 10px;
+}
+.color-filter li , .brand-filter li{
+    margin-top: 10px;
+}
+.img-box{
+    background-color: bisque;
+    padding: 20px;
+    height: 160px;
+    width: 160px;
+    margin: 10px auto;
+}
+.img-box:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.img-box img{
+    display: block;
+    margin: 0px auto;
+    transition:all ease 0.3s ;
+    -webkit-transition:all ease 0.3s ;
+    -moz-transition:all ease 0.3s ;
+    -ms-transition:all ease 0.3s ;
+    -o-transition:all ease 0.3s ;
+    width: 109px;
+    height: 109px;
+}
+.card-sold-box{
+  width: 100%;
+  height: 7px;
+  border-radius: 50px;
+  border: 1px solid black; 
+}
+.sold{
+  background-color: rgb(0, 0, 87);
+  width: 60%;
+  height: 100%;
+}
+.sold-text{
+  font-size: 12px;
+}
+.add-cart{
+    margin: 10px auto;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(224, 224, 255);
+}
+
+.product-name{
+    font-size: 15px;
+    font-weight: bold;
+}
+.product-rate{
+    font-size: 11px;
+    
+}
+.product-price{
+    font-size:14px;
+}
+
+.info-box {
+    background-color: #d9f2ff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.info-box i {
+    font-size: 30px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+@media (max-width : 1200px) {
+    .filter-box{
+        display: none;
+    }
+    
+    
+}
+.page-address{
+    background-color: rgb(168, 168, 244);
+}
+.address a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+.address a:hover{
+    
+    color: rgba(0, 0, 0, 0.498);
+}
+.product-box:hover{
+    cursor: pointer;
+}

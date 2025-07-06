@@ -1,0 +1,148 @@
+.page-address{
+    background-color: rgb(168, 168, 244);
+}
+.address a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+.address a:hover{
+    
+    color: rgba(0, 0, 0, 0.498);
+}
+
+
+.product-ditayl a{
+    width: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.369);
+    border-radius: 10px;
+    align-content: center;
+    margin-left: 10px;
+    
+    
+}
+.product-ditayl a img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+.comment-cart-product{
+    border-right: 1px solid rgba(0, 0, 0, 0.426);
+    padding-right: 7px;
+    color:  rgba(0, 0, 0, 0.426);
+}
+.btn-tag{
+    border: none;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 12px;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+}
+.btn-tag:hover{
+    background-color: rgb(192, 192, 255);
+}
+.btn-product-count{
+    border: 1px solid rgba(0, 0, 0, 0.481);
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 40px; /* فاصله عمودی بین ردیف‌ها */
+    overflow-x: scroll;
+  }
+.table-cart{
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+ .cart-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .cart-update {
+      color: #6c757d;
+      cursor: pointer;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    .discount-code {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .discount-code input {
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      min-width: 150px;
+    }
+
+    .discount-code button {
+      background-color: #117ea6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s ease;
+    }
+
+    .discount-code button:hover {
+      background-color: #0d6e96;
+    }
+.pay-ditayl{
+    background-color: rgb(255, 255, 237);
+}
+.cart-box{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.info-box {
+    background-color: #d9f2ff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.info-box i {
+    font-size: 30px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+.table-cart {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.table-cart table {
+  min-width: 800px; /* یا بیشتر بر اساس محتوای ستون‌ها */
+}
+

@@ -1,0 +1,470 @@
+* {
+  font-family: "vazir";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "vazir";
+  src: url("../FONTS/Vazir.ttf");
+}
+@font-face {
+  font-family: "vazir-bold";
+  src: url("../FONTS/Vazir-Bold.ttf");
+}
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.header-text {
+  font-size: 13px;
+  font-family: "vazir";
+}
+li {
+  list-style-type: none;
+}
+.header {
+  background-color: rgb(163, 84, 237);
+}
+.order-tracking {
+  border-right: 1px solid rgba(0, 0, 0, 0.356);
+}
+.select-items {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.option-item {
+  border-radius: 10px;
+  background-color: aqua;
+  cursor: pointer !important;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  direction: rtl; /* برای فارسی */
+  font-family: "IRANSans", sans-serif;
+}
+
+.dropdown-btn {
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border: none;
+  font-family: "vazir";
+}
+
+.dropdown-content {
+  height: 200px;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+  overflow-y: scroll;
+  font-size: 11px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #eee;
+  background-color: antiquewhite;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* نمایش منو هنگام هاور یا کلیک */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.icon-category {
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+.dropdown:hover .icon-category {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.search-category {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.logo-box {
+  width: 220px;
+}
+.logo-img {
+  width: 100%;
+}
+.search-box {
+  border: 1px solid rgba(0, 0, 0, 0.391);
+}
+
+.search {
+  width: 500px;
+  border: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.354);
+}
+.search-btn {
+  width: 50px;
+  border: none;
+  background-color: rgb(163, 84, 237);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.midlle-header-items {
+  width: 200px;
+}
+.midlle-header-item {
+  cursor: pointer;
+}
+.icon-item {
+  height: 50px;
+  cursor: pointer;
+}
+.cart-icon,
+.faverit {
+  position: relative;
+  display: inline-block;
+}
+.cart-icon::after,
+.faverit::after {
+  content: "3"; /* تعداد آیتم‌ها رو اینجا بذار */
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: rgb(163, 84, 237);
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+  line-height: 1;
+  min-width: 18px;
+  text-align: center;
+}
+
+.last-header .dropdown {
+  position: relative;
+  display: inline-block;
+  direction: rtl; /* برای فارسی */
+  font-family: "IRANSans", sans-serif;
+}
+
+.last-header {
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.173);
+  padding: 10px 0px;
+}
+.last-header .dropdown-btn {
+  background-color: rgb(134, 227, 5);
+  padding: 10px 20px;
+  border: 1px solid #c32222;
+  cursor: pointer;
+  border: none;
+  font-family: "vazir";
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.last-header .dropdown-content-category {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  height: fit-content;
+  width: fit-content;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+  overflow-y: auto;
+  font-size: 11px;
+  right: 10px;
+  border-radius: 10px;
+}
+.category-item {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+.category-item:hover {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.467);
+}
+.category-img {
+  width: 80%;
+}
+.category-title {
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.last-header .dropdown-content-category a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #eee;
+  background-color: antiquewhite;
+}
+
+.last-header .dropdown-content-category a:hover {
+  background-color: #f1f1f1;
+}
+
+/* نمایش منو هنگام هاور یا کلیک */
+.last-header .dropdown:hover .dropdown-content-category {
+  display: grid;
+}
+.menu {
+  width: 600px;
+  font-size: 12px;
+}
+
+.menu-item .dropdown {
+  position: relative;
+  display: inline-block;
+  direction: rtl; /* برای فارسی */
+  font-family: "IRANSans", sans-serif;
+}
+
+.menu-item .dropdown-btn {
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 1px solid #c32222;
+  cursor: pointer;
+  border: none;
+  font-family: "vazir";
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.menu-item .dropdown-content {
+  height: fit-content;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+  font-size: 11px;
+  overflow: auto;
+  border-radius: 10px;
+  transition: all ease 0.6s;
+}
+
+.menu-item .dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #eee;
+  background-color: antiquewhite;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.menu-item .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* نمایش منو هنگام هاور یا کلیک */
+.menu-item .dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+}
+.contact {
+  background-color: rgb(203, 203, 248);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all ease 0.5s;
+}
+.contact-us {
+  text-decoration: none;
+  color: rgb(0, 0, 64);
+}
+.contact:hover {
+  background-color: rgb(21, 21, 234);
+  .contact-us {
+    color: rgb(247, 247, 247);
+  }
+}
+#menu-btn{
+  display: none;
+}
+
+.hamburger-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1001;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 260px;
+  height: 100%;
+  background: #76bdf0;
+  z-index: 1000;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+  padding: 20px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+}
+
+.mobile-menu.active {
+  right: -10px;
+}
+
+.mobile-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu-item {
+  margin-bottom: 15px;
+}
+
+.mobile-menu-item > .submenu-toggle {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-family: 'Vazir';
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  color: #333;
+}
+
+.submenu {
+  list-style: none;
+  padding-right: 15px;
+  display: none;
+  margin-top: 8px;
+}
+
+.submenu li {
+  margin-bottom: 8px;
+}
+
+.submenu a {
+  text-decoration: none;
+  color: #555;
+  font-size: 15px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 900;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.close-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 900px) {
+  .order-tracking-box , .search-box , .menu , #contact-us{
+    display: none !important;
+
+  }
+  #menu-btn{
+    display: block;
+  }
+}
+@media (max-width : 444px) {
+  #about-us{
+    display: none;
+  }
+}
